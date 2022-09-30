@@ -1,3 +1,4 @@
+/* Landing Page Style Start */
 .landing-page {
     display: flex;
     justify-content: space-between;
@@ -69,11 +70,63 @@
 .landing-button-md {
     display: none;
 }
-
-
-
 /* Max- 375px Mobile View */
-@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 375px) {
+    .landing-page {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .landing-img-section img {
+        width: 440px;
+        height: 775px;
+        padding-top: 100px;
+        padding-left: 0px;
+    }
+
+    .landing-content {
+        padding-top: 60px;
+        padding-right: 0px;
+    }
+    .landing-content h1 {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 64px;
+        color: #240D57;
+        text-align: center;
+    }
+    .landing-content p {
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #4F4F4F;
+    }
+    .landing-button {
+        display: none;
+    }
+
+    .landing-button-md {
+        display: flex;
+        justify-content: center;
+        padding-top: 50px;
+    }
+    .landing-button-md a {
+        text-decoration: none;
+        font-family: 'Helvetica';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 23px;
+        color: #fff;
+        background: linear-gradient(90deg, #8456EC 3.25%, #E87BF8 100%);
+        padding: 16px 70px 16px 70px;
+    }
+}
 
 /* 376px to Max- 960px iPad Pro 11 View */
 @media only screen and (min-width:376px) and (max-width:960px) {
@@ -132,3 +185,4 @@
         padding: 16px 70px 16px 70px;
     }
 }
+/* Landing Page Style End */
